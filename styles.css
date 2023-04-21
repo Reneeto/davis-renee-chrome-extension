@@ -1,7 +1,7 @@
 body {
-  /* background: transparent; */
   margin: 0px;
 }
+
 
 .pop-up {
   padding: 20px;
@@ -32,10 +32,11 @@ button {
 h1 {
   padding-top: 12px;
   margin-bottom: -5px;
+  font-size: xx-large;
 }
 
 h2 {
-  font-size: small;
+  font-size: medium;
   text-align: right;
   /* padding-top: 5px; */
 }
