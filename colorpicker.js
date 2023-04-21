@@ -13,12 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelector('button').addEventListener('click', () => {
     const pickedColor = document.querySelector('#result');
     const eyeDropper = new EyeDropper();
-    eyeDropper.open()
+    eyeDropper
+    .open()
       .then((result) => {
         pickedColor.innerHTML = result.sRGBHex;
         pickedColor.style.backgroundColor = result.sRGBHex;
       })
-    eyeDropper.catch((e) => {
+    .catch((e) => {
       pickedColor.innerHTML = e;
     })
   })
