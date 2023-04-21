@@ -4,5 +4,6 @@
   "name": "Color Picker",
   "description": "Find the RGB formula for a color on any webpage",
   "version": "1.0",
-  "chrome_url_overrides": "index.html"
+  "chrome_url_overrides": "index.html",
+  "permissions": ["activetab"]
 }
