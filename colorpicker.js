@@ -35,11 +35,15 @@ document.addEventListener('DOMContentLoaded', () => {
         const resultsContainer = document.querySelector('#results-container');
         const innerContainer = document.createElement('div');
         const outerContainer = document.createElement('div');
-        innerContainer.innerHTML = result.sRGBHex;
-        outerContainer.style.backgroundColor = result.sRGBHex;
-        innerContainer.className = "inner-container"
+        const outerContainerText = document.createElement('div');
+        outerContainerText.innerHTML = result.sRGBHex;
+        innerContainer.style.backgroundColor = result.sRGBHex;
+        innerContainer.className = "inner-container";
+        outerContainer.className = "outer-container";
+        outerContainerText.className = "hex-code";
         resultsContainer.appendChild(outerContainer);
         outerContainer.appendChild(innerContainer); 
+        outerContainer.appendChild(outerContainerText);
       })
       .catch((e) => {
         alert(e);
