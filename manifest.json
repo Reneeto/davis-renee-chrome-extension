@@ -7,6 +7,24 @@
   "background": {
     "javascriptFile": "colorpicker.js"},
   "action": {
-    "default_popup": "index.html"
-  }
+    "default_popup": "index.html",
+    "default_icon": "/home/reneetoscan/davis-renee-chrome-extension/assets/color-wheel.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "./colorpicker.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ]
 }
