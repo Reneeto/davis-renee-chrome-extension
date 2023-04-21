@@ -8,7 +8,7 @@
     "javascriptFile": "colorpicker.js"},
   "action": {
     "default_popup": "index.html",
-    "default_icon": "/home/reneetoscan/davis-renee-chrome-extension/assets/color-wheel.png"
+    "default_icon": "assets/color-wheel.png"
   },
   "content_scripts": [
     {
