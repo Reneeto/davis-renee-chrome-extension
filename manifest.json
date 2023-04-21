@@ -5,7 +5,7 @@
   "description": "Find the RGB formula for a color on any webpage",
   "version": "1.0",
   "action":{
-    "default_popup": "index.html",
+    "default_popup": "./index.html",
     "default_title": "Color Picker"
   }
 }
