@@ -10,13 +10,13 @@
 // //run function when extension pop-up buttosn is clicked
 document.addEventListener('DOMContentLoaded', () => {
   //on button click
-    //store ID result div in resultElement constant
-    //create new EyeDropper instance and store in eyeDropper label
-    //for eyeDropper
-      //use open method 
-      //then 
-        //add result text to resultElement
-        //make background color of resultElement the result color
-      //catch 
-        //resultElement text content something
+  //store ID result div in resultElement constant
+  //create new EyeDropper instance and store in eyeDropper label
+  //for eyeDropper
+    //use open method 
+    //then 
+      //add result text to resultElement
+      //make background color of resultElement the result color
+    //catch 
+      //resultElement text content something  
 })
