@@ -7,7 +7,7 @@ body {
   padding: 20px;
   margin: auto;
   width: 300px;
-  background-color: rgba(235, 235, 250);
+  background-color: rgb(240, 240, 245);
   /* border-radius: 25px; */
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
 }
@@ -38,17 +38,18 @@ h1 {
 h2 {
   font-size: medium;
   text-align: right;
-  /* padding-top: 5px; */
 }
 
 button {
   border-radius: 10px;
-  background-color: #FF71A7;
+  /* background-color: #fbc072; */
   padding: 10px 20px;
   margin: 50px 10px 20px 10px;
   display: flex;
   font-size: large;
+  background: linear-gradient(45deg,#f9f097, #fbc072, #ff97c0, #ff71a7, #918bd7, #736acb, #a4e6ff, #5bd6fd);
 }
+
 
 .header-container {
   display: flex;
