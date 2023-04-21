@@ -1,38 +1,54 @@
+body {
+  background: none;
+  margin: 0px;
+}
 
 .pop-up {
-  background-color: #dcdcdc;
+  padding: 20px;
+  margin: auto;
+  width: 300px;
+  background-color: rgba(235, 235, 250);
   border-radius: 25px;
+  box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
 }
-.pop-up {
-  padding: 10px;
-  margin: auto;
-  width: 200px;
-}
+
+
 img {
-  width: 100px;
-  height: 100px;
-  margin: auto;
+  width: 75px;
+  height: 75px;
+  /* margin: auto; */
+  padding-right: 20px;
+  padding-left: 10px;
 }
 
-.innerContainer {
-  width: 100px;
-  height: 100px;
-}
 
-h1, h2, button {
+h1,
+h2,
+button {
   font-family: 'Architects Daughter', cursive;
   margin: auto;
-  text-align: center;
+}
+
+h1 {
+  padding-top: 12px;
+  margin-bottom: -5px;
 }
 
 h2 {
-  font-size:medium;
+  font-size:small;
+  text-align: right;
+  /* padding-top: 5px; */
 }
 
 button {
   border-radius: 10px;
+  background-color: #FF71A7;
+  padding: 10px 20px;
+  margin: 50px 10px 20px 10px;
+  display: flex;
+  font-size: large;
 }
 
-#header, button {
-  display: grid;
+.header-container {
+  display: flex;
 }
