@@ -9,18 +9,19 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  
   //on button click, call EyeDropper API and display color in pickedColor div
   document.querySelector('button').addEventListener('click', () => {
     const pickedColor = document.querySelector('#result');
     const eyeDropper = new EyeDropper();
     eyeDropper
-    .open()
+      .open()
       .then((result) => {
         pickedColor.innerHTML = result.sRGBHex;
         pickedColor.style.backgroundColor = result.sRGBHex;
       })
-    .catch((e) => {
-      pickedColor.innerHTML = e;
-    })
+      .catch((e) => {
+        pickedColor.innerHTML = e;
+      })
   })
 })
