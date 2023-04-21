@@ -6,12 +6,23 @@
   <meta charset="utf-8">
   <link rel="shortcut icon" type="image/x-icon" href="assets/color-wheel.png">
   <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Indie+Flower&family=Shadows+Into+Light&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
-  <h1>Color Picker</h1>
-  <button id="button">Pick Color on Web Page</button>
-  <div id="results-container">
+  <div class="pop-up">
+    <div id="header"> 
+      <img src="assets/color-wheel.png" alt="color-wheel">
+      <h1>Pick a color</h1>
+      <h2>with Davis and Renee</h2>
+    </div>
+    <button id="button">Pick color from web page</button>
+    <div id="results-container">
+    </div>
   </div>
   <script src="colorpicker.js"></script>
 </body>

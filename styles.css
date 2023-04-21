@@ -1,10 +1,38 @@
-body {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-#result {
+.pop-up {
+  background-color: #dcdcdc;
+  border-radius: 25px;
+}
+.pop-up {
+  padding: 10px;
+  margin: auto;
+  width: 200px;
+}
+img {
   width: 100px;
   height: 100px;
+  margin: auto;
+}
+
+.innerContainer {
+  width: 100px;
+  height: 100px;
+}
+
+h1, h2, button {
+  font-family: 'Architects Daughter', cursive;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  font-size:medium;
+}
+
+button {
+  border-radius: 10px;
+}
+
+#header, button {
+  display: grid;
 }

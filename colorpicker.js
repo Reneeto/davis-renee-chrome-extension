@@ -10,7 +10,7 @@
 
 document.addEventListener('DOMContentLoaded', () => {
   class Color {
-    constructor () {
+    constructor() {
       this.innerContainer = document.createElement('div');
       this.outerContainer = document.createElement('div');
     }
@@ -24,20 +24,21 @@ document.addEventListener('DOMContentLoaded', () => {
     pickedColor.outerContainer.className = 'outer-container';
     //get results-container div and store under resultsContainer label
     const resultsContainer = document.getElementById('results-container');
-    //append to document
-    pickedColor.outerContainer.appendChild(pickedColor.innerContainer);
-    resultsContainer.appendChild(pickedColor.outerContainer);
-    document.body.appendChild(resultsContainer);
 
     const eyeDropper = new EyeDropper();
     eyeDropper
       .open()
       .then((result) => {
+        pickedColor.innerContainer.style.backgroundColor = result.sRGBHex
         pickedColor.outerContainer.innerHTML = result.sRGBHex;
-        pickedColor.innerContainer.style.backgroundColor = result.sRGBHex;
       })
       .catch((e) => {
         alert(e);
       })
+    
+    //append to document
+    pickedColor.outerContainer.appendChild(pickedColor.innerContainer);
+    resultsContainer.appendChild(pickedColor.outerContainer);
+    document.body.appendChild(resultsContainer);
   })
 })
