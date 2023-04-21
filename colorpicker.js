@@ -7,16 +7,19 @@
 // //when user clicks on an element, return the RGB color of whatever the user clicked on
 // //display the RGB color within the actual extension
 
-// //run function when extension pop-up buttosn is clicked
+
 document.addEventListener('DOMContentLoaded', () => {
-  //on button click
-  //store ID result div in resultElement constant
-  //create new EyeDropper instance and store in eyeDropper label
-  //for eyeDropper
-    //use open method 
-    //then 
-      //add result text to resultElement
-      //make background color of resultElement the result color
-    //catch 
-      //resultElement text content something  
+  //on button click, call EyeDropper API and display color in pickedColor div
+  document.querySelector('button').addEventListener('click', () => {
+    const pickedColor = document.querySelector('#result');
+    const eyeDropper = new EyeDropper();
+    eyeDropper.open()
+      .then((result) => {
+        pickedColor.innerHTML = result.sRGBHex;
+        pickedColor.style.backgroundColor = result.sRGBHex;
+      })
+    eyeDropper.catch((e) => {
+      pickedColor.innerHTML = e;
+    })
+  })
 })
