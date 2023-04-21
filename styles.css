@@ -1,5 +1,5 @@
 body {
-  background: none;
+  background: transparent;
   margin: 0px;
 }
 
@@ -8,7 +8,7 @@ body {
   margin: auto;
   width: 300px;
   background-color: rgba(235, 235, 250);
-  border-radius: 25px;
+  /* border-radius: 25px; */
   box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, .5);
 }
 
@@ -35,7 +35,7 @@ h1 {
 }
 
 h2 {
-  font-size:small;
+  font-size: small;
   text-align: right;
   /* padding-top: 5px; */
 }
