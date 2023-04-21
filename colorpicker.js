@@ -9,18 +9,40 @@
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  // class Color {
+  //   constructor () {
+  //     this.outerContainer = document.createElement('div');
+  //     this.innerContainer = document.createElement('div');
+  //   }
+  // }
   //on button click, call EyeDropper API and display color in pickedColor div
   document.querySelector('button').addEventListener('click', () => {
-    const pickedColor = document.querySelector('#result');
+    //create new instance of Color class
+    // const pickedColor = new Color;
+    // //assign class names to inner and outer containers
+    // pickedColor.innerContainer.className = 'inner-container';
+    // pickedColor.outerContainer.className = 'outer-container';
+    // //get results-container div and store under resultsContainer label
+    // const resultsContainer = document.getElementById('results-container');
+    // //append to document
+    // pickedColor.outerContainer.appendChild(pickedColor.innerContainer);
+    // resultsContainer.appendChild(pickedColor.outerContainer);
+    // document.body.appendChild(resultsContainer);
     const eyeDropper = new EyeDropper();
     eyeDropper
-    .open()
+      .open()
       .then((result) => {
-        pickedColor.innerHTML = result.sRGBHex;
-        pickedColor.style.backgroundColor = result.sRGBHex;
+        const resultsContainer = document.querySelector('#results-container');
+        const innerContainer = document.createElement('div');
+        const outerContainer = document.createElement('div');
+        innerContainer.innerHTML = result.sRGBHex;
+        outerContainer.style.backgroundColor = result.sRGBHex;
+        innerContainer.className = "inner-container"
+        resultsContainer.appendChild(outerContainer);
+        outerContainer.appendChild(innerContainer); 
       })
-    .catch((e) => {
-      pickedColor.innerHTML = e;
-    })
+      .catch((e) => {
+        alert(e);
+      })
   })
 })
