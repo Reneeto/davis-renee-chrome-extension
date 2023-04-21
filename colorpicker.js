@@ -1,33 +1,16 @@
 // //user functionality 
 // //click on the icon for the extension __X__
 // //shows a popup __X__
-// //there's a button that says "pick color" -> invoke the function (?) utilizing eventlistener
-// //user will hover certain elements
-// //stretch - magnifying glass that magnifies the color 
-// //when user clicks on an element, return the RGB color of whatever the user clicked on
-// //display the RGB color within the actual extension
+// //there's a button that says "pick color" -> invoke the function (?) utilizing eventlistener__X__
+// //user will hover certain elements__X__
+// //stretch - magnifying glass that magnifies the color __X__
+// //when user clicks on an element, return the RGB color of whatever the user clicked on__X__
+// //display the RGB color within the actual extension__X__
 
 
 document.addEventListener('DOMContentLoaded', () => {
-  // class Color {
-  //   constructor () {
-  //     this.outerContainer = document.createElement('div');
-  //     this.innerContainer = document.createElement('div');
-  //   }
-  // }
-  //on button click, call EyeDropper API and display color in pickedColor div
-  document.querySelector('button').addEventListener('click', () => {
-    //create new instance of Color class
-    // const pickedColor = new Color;
-    // //assign class names to inner and outer containers
-    // pickedColor.innerContainer.className = 'inner-container';
-    // pickedColor.outerContainer.className = 'outer-container';
-    // //get results-container div and store under resultsContainer label
-    // const resultsContainer = document.getElementById('results-container');
-    // //append to document
-    // pickedColor.outerContainer.appendChild(pickedColor.innerContainer);
-    // resultsContainer.appendChild(pickedColor.outerContainer);
-    // document.body.appendChild(resultsContainer);
+  //on button click, create new instance of EyeDropper API
+  document.querySelector('#button').addEventListener('click', () => {
     const eyeDropper = new EyeDropper();
     eyeDropper
       .open()
@@ -42,16 +25,18 @@ document.addEventListener('DOMContentLoaded', () => {
         outerContainer.className = "outer-container";
         outerContainerText.className = "hex-code";
         resultsContainer.appendChild(outerContainer);
-        outerContainer.appendChild(innerContainer); 
+        outerContainer.appendChild(innerContainer);
         outerContainer.appendChild(outerContainerText);
       })
       .catch((e) => {
         alert(e);
       })
-    
+
+
+
+
+
     //append to document
-    pickedColor.outerContainer.appendChild(pickedColor.innerContainer);
-    resultsContainer.appendChild(pickedColor.outerContainer);
-    document.body.appendChild(resultsContainer);
+
   })
 })

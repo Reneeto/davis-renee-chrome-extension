@@ -24,7 +24,7 @@ img {
 
 h1,
 h2,
-button {
+#button {
   font-family: 'Architects Daughter', cursive;
   margin: auto;
 }
@@ -40,7 +40,7 @@ h2 {
   text-align: right;
 }
 
-button {
+#button {
   border-radius: 10px;
   /* background-color: #fbc072; */
   padding: 10px 20px;
