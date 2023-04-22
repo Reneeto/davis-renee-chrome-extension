@@ -35,23 +35,23 @@ document.addEventListener('DOMContentLoaded', () => {
         alert(e);
       })
     //append to document
-  
+
   })
 });
 
-  document.querySelector('#refresh').addEventListener('click', () => {
-    function removeElementsByClass(className){
-      const elements = document.getElementsByClassName(className);
-      while(elements.length > 0){
-          elements[0].parentNode.removeChild(elements[0]);
-      }
+document.querySelector('#refresh').addEventListener('click', () => {
+  function removeElementsByClass(className) {
+    const elements = document.getElementsByClassName(className);
+    while (elements.length > 0) {
+      elements[0].parentNode.removeChild(elements[0]);
     }
-    removeElementsByClass("outer-container");
-    
-    // const outerDiv = document.querySelector(".outer-container");
-    // const innerDiv = document.querySelector(".inner-container");
-    // const hexDiv = document.querySelector(".hex-code");
-    // outerDiv.classList.remove("outer-container");
-    // innerDiv.classList.remove("inner-container");
-    // hexDiv.classList.remove("hex-code");
+  }
+  removeElementsByClass("outer-container");
+
+  // const outerDiv = document.querySelector(".outer-container");
+  // const innerDiv = document.querySelector(".inner-container");
+  // const hexDiv = document.querySelector(".hex-code");
+  // outerDiv.classList.remove("outer-container");
+  // innerDiv.classList.remove("inner-container");
+  // hexDiv.classList.remove("hex-code");
 })
