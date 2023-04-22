@@ -50,6 +50,19 @@ h2 {
   background: linear-gradient(45deg,#f9f097, #fbc072, #ff97c0, #ff71a7, #918bd7, #736acb, #a4e6ff, #5bd6fd);
 }
 
+#btn-export {
+  border-radius: 10px;
+  /* background-color: #fbc072; */
+  padding: 5px 10px;
+  font-size: small;
+  background:rgba(87, 85, 85, 0.764);
+  font-family: 'Architects Daughter', cursive;
+  margin: auto;
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+}
+
 #refresh {
   border-radius: 10px;
   /* background-color: #fbc072; */
